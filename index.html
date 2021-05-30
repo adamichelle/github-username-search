@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Username Search</title>
+    <link href="/style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <main>
-        <form action="/search.html" method="GET">
-            <div class="">
-                <input class="gus-input" name="username" id="username" />
-            </div>
-            <div>
-                <button class="gus-button" type="submit">Search</button>
-            </div>
-        </form>
+        <div class="gus-h-flex" style="height: 90vh; justify-content: center; padding: 0 10rem; flex-direction: column;">
+            <h1 style="padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #E1E4E8;">Github Username Search</h1>
+            <form action="search.html" method="GET" style=" align-self:center; width:100%">
+                <label class="gus-c-label" style="width:100%">
+                    <input class="gus-c-input" name="username" id="username" placeholder="Enter a username"  style="width:90%" />
+                    <div class="gus-h-flex" style="width:10%;">
+                        <button class="gus-c-btn" type="submit" aria-label="Search" style="margin-left: auto; background: transparent; border: none;" ><i class="fas fa-2x fa-search"></i></button>
+                    </div>
+
+                </div>
+                <div>
+                </div>
+            </form>
+        </div>
     </main>
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
 </body>
 </html>

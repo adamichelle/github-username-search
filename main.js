@@ -11,7 +11,7 @@
     const params = new URLSearchParams(document.location.search);
     const username = params.get('username');
     const url = 'https://api.github.com/graphql';
-    const token = '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';
+    const token = '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';
     const query = `
         query($number_of_repos:Int!, $repository_owner_name:String!) {
             user (login: $repository_owner_name) {
