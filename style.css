@@ -1,0 +1,360 @@
+/* Reset Styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+figure, figusaption, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figusaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.gus-h-block {
+    display: block;
+}
+
+.gus-h-flex {
+    display: flex !important;
+}
+
+.gus-h-flex--column {
+    flex-direction: column !important;
+}
+
+.gus-h-ml--auto {
+    margin-left: auto;
+}
+
+.gus-c-image--round {
+    border-radius: 50%;
+}
+
+.gus-c-container {
+    padding: 1.5rem 1.5rem;
+}
+
+.gus-c-input {
+    background: transparent;
+    border: none;
+}
+
+.gus-c-label {
+    display: flex;
+    color: #FFFFFF;
+    border: 1px solid #E1E4E8;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.gus-c-nav, .gus-c-nav__nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 1.5rem 2rem;
+    align-items: center;
+}
+
+.gus-c-nav__nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.gus-c-nav--dark {
+    background-color: #161B22;
+    color: #FFFFFF;
+}
+
+.gus-c-nav__nav-item {
+    display: flex;
+}
+
+.gus-c-nav__nav-item img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.gus-c-nav__nav-menu .gus-c-nav__nav-item {
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #30363D;
+}
+
+.gus-c-nav__nav-avatar,
+.gus-c-nav__nav-icon {
+    position: relative;
+    margin-right: 10px;
+}
+
+.gus-c-nav__nav-avatar {
+    margin-right: 0;
+}
+
+.gus-c-nav__nav-avatar svg.fa-caret-down,
+.gus-c-nav__nav-icon svg.fa-caret-down,
+.gus-c-nav__nav-icon svg.fa-circle {
+    position: absolute;
+    margin-left: 6px;
+}
+
+.gus-c-nav__nav-icon svg.fa-circle {
+    top: -3px;
+    font-size: 1.2rem;
+    margin-left: -10px;
+    color: #006eed;
+}
+
+.gus-c-nav__nav-icon svg.fa-caret-down {
+    top: 0;
+}
+
+.gus-c-nav__nav-link {
+    color: #FFFFFF;
+}
+
+.gus-c-nav__nav-link:hover {
+    color: #C0C0C0;
+}
+
+.gus-c-nav__nav-search {
+    width: 100%;
+}
+
+.gus-c-nav__nav-search-label {
+    width: 98%;
+    display: flex;
+    color: #FFFFFF;
+    border: 1px solid #21262D;
+    background-color: #0D1117;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.gus-c-nav__nav-search-input {
+    background: none;
+    border: none;
+    width: 90%;
+}
+
+.gus-c-nav__nav-search-icon {
+    border: 1px solid #21262D;
+    width: 5%;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.gus-c-nav__nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.gus-c-avatar .gus-c-image--round{
+    border: 1px solid #30363D;
+}
+.gus-c-user-info__profile,
+.gus-c-user-info__bio,
+.gus-c-user-info__profile-edit,
+.gus-c-user-info__connections {
+    margin-bottom: 2rem;
+}
+
+.gus-c-user-info__profile-edit button {
+    width: 100%;
+}
+
+.gus-c-nav-tab {
+    padding: 1rem 1rem 0;
+    display: flex;
+}
+
+.gus-c-nav-tab__nav-link {
+    padding: 2rem 1rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.gus-c-nav-tab__nav-link--active {
+    border-bottom: 3px solid #F9826C;
+}
+
+.gus-c-nav-tab__badge {
+    padding: 0 0.5rem;
+    background-color: rgba(209, 213, 218, 0.5);
+    border-radius: 1rem;
+    line-height: 18px;
+}
+
+.gus-c-repositories__search {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gus-c-repositories__search input {
+    flex: auto;
+}
+
+.gus-c-repositories__search .gus-c-btn {
+    padding: 0.6rem;
+}
+
+.gus-c-repository {
+    margin: 2rem 0;
+    border-top: 1px solid #E1E4E8;
+    padding: 2rem 0;
+}
+
+.gus-c-repository__name {
+    margin-bottom: 1.5rem;
+}
+
+.gus-c-repository__star {
+    margin-left: auto;
+}
+
+.gus-c-btn {
+    padding: 1rem;
+    border: 1px solid #E1E4E8;
+    border-radius: 0.5rem;
+    background-color: #FAFBFC;
+}
+
+.gus-c-btn__link {
+    background-color: transparent;
+    border: none;
+}
+
+@media only screen and (max-width: 769px) {
+    .gus-c-nav__nav-menu {
+        display:none;
+    }
+
+    .gus-c-nav__nav-menu,
+    .gus-c-nav {
+        justify-content: space-between;
+    }
+
+    .gus-c-nav__nav-item.nav-brand {
+        flex: auto;
+        justify-content: center;
+    }
+
+    .gus-h-hide {
+        display: none !important;
+    }
+
+    .gus-c-user-info__profile {
+        display: flex;
+        margin: 1rem 0 2.5rem;
+    }
+
+    .gus-c-user-info__status {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .gus-c-user-info__status label {
+        display: flex;
+        border: 1px solid #E1E4E8;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .gus-c-user-info__status-input {
+        width: 90%;
+        background: transparent;
+        border: none;
+    }
+
+    .gus-c-user-info__status-icon {
+        margin-right: 5px;
+    }
+
+    .gus-c-avatar {
+        width: 20%;
+    }
+
+    .gus-c-avatar .gus-c-image--round{
+        width: 50px;
+        height: 50px;
+    }
+
+    .gus-c-name-info {
+        width: 80%;
+    }
+
+    .gus-c-nav-tab {
+        overflow-x: scroll;
+        border-bottom: 1px solid #E1E4E8;
+    }
+
+    .gus-c-repositories__search form {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .gus-h-hide--md {
+        display: none !important;
+    }
+
+    .gus-c-nav__nav-item {
+        margin-right: 2rem;
+    }
+
+    .gus-c-nav__nav-icon svg.fa-circle {
+        font-size: 1rem;
+    }
+
+    .gus-c-container {
+        padding: 4rem 7rem;
+    }
+
+    .gus-c-avatar .gus-c-image--round{
+        width: 250px;
+        height: 250px;
+    }
+
+    .gus-c-user-account-details {
+        display: flex;
+    }
+
+    .gus-c-user-info {
+        width: 25%;
+        padding: 0 2rem;
+    }
+
+    .gus-c-repositories {
+        width: 75%;
+    }
+
+    .gus-c-repositories__search form {
+        width: 60%;
+        margin-right: 0.8rem;
+    }
+}

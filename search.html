@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Username Search - Search</title>
+    <link href="/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="gus-c-nav gus-c-nav--dark">
+            <div class="gus-c-nav__nav-item gus-h-hide--md">
+                <button class="gus-c-nav__nav-link gus-c-btn gus-c-btn__link" id="navMenuToggler"><i class="fas fa-2x fa-bars"></i></button>
+            </div>
+            <div class="gus-c-nav__nav-item nav-brand">
+                <a class="gus-c-nav__nav-link gus-c-nav__nav-brand" href="#"><i class="fa fab fa-2x fa-github"></i></a>
+            </div>
+            <div class="gus-c-nav__nav-item gus-h-hide--md">
+                <a href="#" class="gus-c-nav__nav-icon gus-c-nav__nav-link"><i class="fas fa-2x fa-bell"></i><span class="fas fa-circle"></span></a>
+            </div>
+            <div class="gus-c-nav__nav-item gus-h-hide">
+                <div class="gus-c-nav__nav-search">
+                    <form>
+                        <label for="search" class="gus-c-nav__nav-search-label">
+                            <input id="search" class="gus-c-nav__nav-search-input" placeholder="Search or jump to">
+                            <i class="gus-c-nav__nav-search-icon">/</i>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="gus-c-nav__nav-item gus-h-hide">
+                <ul class="gus-c-nav__nav-links">
+                    <li class="gus-c-nav__nav-item"><a href="#">Pull Requests</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#">Issues</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#">Marketplace</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#">Explore</a></li>
+                </ul>
+            </div>
+            
+            <div class="gus-c-nav__nav-item gus-h-hide" style="margin-left: auto;">
+                <ul class="gus-c-nav__nav-links">
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-icon"><i class="fas fa-bell"></i><span class="fas fa-circle"></span></a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#"  class="gus-c-nav__nav-icon"><div><i class="fas fa-plus"></i><i class="fas fa-caret-down"></i></div></a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-avatar"><img class="gus-c-image--round" src="/images/user-image-placeholder.png" /><i class="fas fa-caret-down"></i></a></li>
+                </ul>
+            </div>
+            <div class="gus-c-nav__nav-item gus-h-hide--md">
+                <ul class="gus-c-nav__nav-menu" role="navigation">
+                    <li class="gus-c-nav__nav-item">
+                        <div class="gus-c-nav__nav-search">
+                            <form>
+                                <label for="search" class="gus-c-nav__nav-search-label">
+                                    <input id="search" class="gus-c-nav__nav-search-input" placeholder="Search or jump to">
+                                    <i class="gus-c-nav__nav-search-icon">/</i>
+                                </label>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Dashboard</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Pull Requests</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Issues</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Marketplace</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Explore</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Codespaces</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Sponsors</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link">Settings</a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link"><img class="gus-c-image--round" src="/images/user-image-placeholder.png" /></a></li>
+                    <li class="gus-c-nav__nav-item"><a href="#" class="gus-c-nav__nav-link"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="searchResult">
+            <div class="gus-h-hide">
+                <div class="gus-h-flex" style="border-bottom: 1px solid #E1E4E8;">
+                    <div class="gus-c-space" style="width: 30%;"></div>
+                    <div class="gus-c-nav-tab" style="width: 70%;">
+                        <a class="gus-c-nav-tab__nav-link"><i class="fas fa-book-open gus-h-hide"></i> Overview</a>
+                        <a class="gus-c-nav-tab__nav-link gus-c-nav-tab__nav-link--active"><i class="fas fa-book gus-h-hide"></i> Repositories <span class="gus-c-nav-tab__badge">5</span></a>
+                        <a class="gus-c-nav-tab__nav-link"><i class="fas fa-chart-bar gus-h-hide"></i> Projects</a>
+                        <a class="gus-c-nav-tab__nav-link"><i class="fas fa-cube gus-h-hide"></i> Packages</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gus-c-container">
+                <div class="gus-c-user-account-details">
+                    <div class="gus-c-user-info">
+                        <div class="gus-c-user-info__profile">
+                            <div class="gus-c-avatar">
+                                <img class="gus-c-image--round" src="/images/user-image-placeholder.png" />
+                            </div>
+                            <div class="gus-c-name-info">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="gus-c-user-info__status gus-h-hide--md">
+                            <form>
+                                <label for="status">
+                                    <span class="gus-c-user-info__status-icon"><i class="far fa-smile"></i></span>
+                                    <input id="search"  class="gus-c-user-info__status-input" placeholder="Set status">
+                                </label>
+                            </form>
+                        </div>
+                        <div class="gus-c-user-info__bio"></div>
+                        <div class="gus-c-user-info__profile-edit">
+                            <button class="gus-c-btn">Edit Profile</button>
+                        </div>
+                        
+                        <div class="gus-h-flex gus-c-user-info__connections gus-h-hide">
+                            <p style="margin-right: 2rem;"><i class="fas fa-user-friends"></i> <span class="gus-c-user-info__connections-followers"></span> followers <i style="vertical-align: middle;">.</i> <span class="gus-c-user-info__connections-following"></span> following </p>
+                            <p><i class="far fa-star"></i> <span class="gus-c-user-info__connections-stars"></span></p>
+                        </div>
+
+                        <div class="gus-c-user-info__contact">
+                            <p style="margin-bottom: 1rem;" class="gus-h-hide gus-c-user-info__location"><i class="fas fa-map-marker-alt"></i> </p>
+                            <p style="margin-bottom: 1rem;" class="gus-c-user-info__email"><i class="far fa-envelope"></i> </p>
+                            <p style="margin-bottom: 1rem;" class="gus-c-user-info__website"><i class="fas fa-link"></i> </p>
+                        </div>
+                        <div class="gus-h-flex gus-c-user-info__connections gus-h-hide--md">
+                            <p style="margin-right: 2rem;"><i class="fas fa-user-friends"></i> <span class="gus-c-user-info__connections-followers"></span> followers <i style="vertical-align: middle;">.</i> <span class="gus-c-user-info__connections-following"></span> following </p>
+                            <p><i class="far fa-star"></i> <span class="gus-c-user-info__connections-stars"></span></p>
+                        </div>
+                    </div>
+                    <div class="gus-c-repositories">
+                        <div class="gus-c-nav-tab gus-h-hide--md">
+                            <a class="gus-c-nav-tab__nav-link"><i class="fas fa-book-open gus-h-hide"></i> Overview</a>
+                            <a class="gus-c-nav-tab__nav-link gus-c-nav-tab__nav-link--active"><i class="fas fa-book gus-h-hide"></i> Repositories <span class="gus-c-nav-tab__badge"></span></a>
+                            <a class="gus-c-nav-tab__nav-link"><i class="fas fa-chart-bar gus-h-hide"></i> Projects</a>
+                            <a class="gus-c-nav-tab__nav-link"><i class="fas fa-cube gus-h-hide"></i> Packages</a>
+                        </div>
+
+                        <div class="gus-c-repositories__search">
+                            <form>
+                                <label for="status" class="gus-c-label">
+                                    <input id="search" class="gus-c-input" placeholder="Find a repository">
+                                </label>
+                            </form>
+                            <button class="gus-c-btn" style="margin-right: 0.8rem; margin-bottom: 1rem;">Type <i class="fas fa-caret-down"></i></button>
+                            <button class="gus-c-btn" style="margin-right: 0.8rem; margin-bottom: 1rem;">Language <i class="fas fa-caret-down"></i></button>
+                            <button class="gus-c-btn" style="margin-right: 0.8rem; margin-bottom: 1rem;">Sort <i class="fas fa-caret-down"></i></button>
+                        </div>
+
+                        <div class="gus-c-repositories__list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="noResult" style="padding: 3rem;">
+            <p style="text-align: center;">No such user found</p>
+        </div>
+    </main>
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
