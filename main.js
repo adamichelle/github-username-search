@@ -65,7 +65,7 @@
     `
     const variables = {
         "repository_owner_name": username,
-        "number_of_repos": 3
+        "number_of_repos": 20
     }
 
     fetch(url, {
