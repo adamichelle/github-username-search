@@ -172,7 +172,7 @@ a:visited {
 }
 
 .gus-c-avatar .gus-c-image--round{
-    border: 1px solid #30363D;
+    border: 1px solid #E1E4E8;
 }
 .gus-c-user-info__profile,
 .gus-c-user-info__bio,
@@ -344,8 +344,49 @@ a:visited {
     }
 
     .gus-c-avatar .gus-c-image--round{
-        width: 250px;
-        height: 250px;
+        width: 270px;
+        height: 270px;
+    }
+
+    .gus-c-status {
+        position: relative;
+    }
+    
+    .gus-c-status__content {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 30px;
+        left: 75%;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #E1E4E8;
+        background-color: #FFFFFF;
+        border-radius: 2em;
+        z-index: 2;
+    }
+
+    .gus-c-status__message {
+        width: 0;
+        transition: .1s ease;
+        opacity: 0;
+        white-space: nowrap;
+    }
+
+    .gus-c-status__content:hover {
+        width: auto;
+        padding: 0 1rem;
+    }
+
+    .gus-c-status__content:hover .gus-c-status__message {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .gus-c-status__content:hover .gus-c-status__emoji {
+        margin-right: 1rem;
     }
 
     .gus-c-user-account-details {

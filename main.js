@@ -126,6 +126,15 @@
     const navAvatarElement = document.querySelector('.gus-c-nav__nav-avatar img');
     navAvatarElement.setAttribute('src', avatarUrl)
 
+    if(status) {
+        const { emojiHTML, message } = status;
+        const statusEmojiElement = document.querySelector('.gus-c-status__emoji');
+        const statusMessageElement = document.querySelector('.gus-c-status__message');
+
+        statusEmojiElement.innerHTML = emojiHTML;
+        statusMessageElement.textContent = message;
+    }
+
     const nameElement = document.querySelector('.gus-c-name-info h1');
     nameElement.textContent = name;
 
@@ -187,7 +196,7 @@
                         </div>
                     </div>
                     <div class="gus-c-repository__details">
-                        <span class="gus-c-repository__language" style="margin-right: 2rem"><span style="color: ${repository.primaryLanguage.color}"><i class="fas fa-circle"></i></span> ${repository.primaryLanguage.name}</span>
+                        ${repository.primaryLanguage ? `<span class="gus-c-repository__language" style="margin-right: 2rem"><span style="color: ${repository.primaryLanguage.color}"><i class="fas fa-circle"></i></span> ${repository.primaryLanguage.name}</span>` : ''}
                         ${repository.forkCount == 0 ? '' : `<span class="gus-c-repository__stars" style="margin-right: 2rem"><i class="fas fa-star"></i> ${repository.forkCount}</span>`}
                         ${repository.stargazerCount == 0 ? '' : `<span class="gus-c-repository__forks" style="margin-right: 2rem"><i class="fas fa-code-branch"></i> ${repository.stargazerCount}</span>`}
                         <span class="gus-c-repository__update-info">Updated on ${date.toDateString()}</span>
