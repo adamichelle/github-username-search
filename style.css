@@ -236,6 +236,14 @@ a:visited {
     margin-left: auto;
 }
 
+.gus-c-repository__link {
+    color: #0366D6 !important;
+}
+
+.gus-c-repository__link:hover {
+    text-decoration: underline !important;
+}
+
 .gus-c-btn {
     padding: 1rem;
     border: 1px solid #E1E4E8;

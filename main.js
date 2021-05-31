@@ -123,6 +123,9 @@
     const avatarElement = document.querySelector('.gus-c-avatar img');
     avatarElement.setAttribute('src', avatarUrl)
 
+    const navAvatarElement = document.querySelector('.gus-c-nav__nav-avatar img');
+    navAvatarElement.setAttribute('src', avatarUrl)
+
     const nameElement = document.querySelector('.gus-c-name-info h1');
     nameElement.textContent = name;
 
